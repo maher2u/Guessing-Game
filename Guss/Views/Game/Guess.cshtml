@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Guess";
+}
+
+<h2 style="color:red">Gussing Game </h2>
+<p>Guess which number I am hiding between 1 to 100</p>
+
+
+<div>
+
+    <br />
+
+
+    <form method="post">
+        <input type="submit" value="submit" />
+
+        <input type="text" placeholder="Enter Youe Namber Here" name="guess" />    <br />
+    </form>
+
+    <div>
+        <br />
+        <p>Here is the message : @ViewBag.msg</p>
+        <p>Count = @ViewBag.Count</p>
+        <p>How many time you get it = @ViewBag.rCount</p>
+        <p>How many time you go Higher = @ViewBag.hCount</p>
+        <p>How many time you go Lower = @ViewBag.lCount</p>
+    </div>
+</div>
